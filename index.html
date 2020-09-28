@@ -7,44 +7,152 @@
 	<meta name="keywords" content="Natural language processing, NLP, Kurdish, Academic CV" />
 	<meta name="description" content="Graduate Student in Computational Linguistics" />
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+		crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+		crossorigin=""></script>
 </head>
 <body>
-<h1>Aso Mahmudi</h1>
+	<div class="fixedmenu">
+		<div class="item"><a href="#home">Aso Mahmudi</a></div>
+		<div class="item"><a href="#education">Education</a></div>
+		<div class="item"><a href="#projects">NLP Projects</a></div>
+		<div class="item"><a href="#publication">Publication</a></div>
+		<div class="item"><a href="#experiences">Experiences</a></div>
+		<div class="item"><a href="#skills">Skills</a></div>
+	</div>
+	<div id="home" style="margin:auto; text-align: center;">
+		<img src="https://books.vejin.net/img/contributors/ئاسۆ مەحموودی.jpg" style="border-radius: 50%;" height="200"/>
+	</div>
+	<div class="container">
+		<div>
+			<h1>Aso Mahmudi</h1>
+			<ul class="ulcenter dimmed">
+				<li>Kurdish: <b>ئاسۆ مەحموودی, Aso Mehmûdî</b></li>
+				<li>IPA: [ʔäːˈso̞ː maħmuːˈdiː]</li>
+				<li>Persian: <b>آسو محمودی</b></li>
+			</ul>
+		</div>
+		<di>
+			<ul>
+				<li>Email: <a href="mailto:aso.mehmudi@gmail.com">aso.mehmudi@gmail.com</a></li>
+				<li>Email: <a href="mailto:aso.mahmudi@ut.ac.ir">aso.mahmudi@ut.ac.ir</a></li>
+				<li>GitHub: <a href="https://github.com/aso-mehmudi">aso-mehmudi</a></li>
+				<li>ResearchGate: <a href="https://www.researchgate.net/profile/Aso_Mahmudi">Aso Mahmudi</a></li>
+				<li>Academia: <a href="https://tehran.academia.edu/AsoMahmudi">Aso Mahmudi</a></li>
+				<li>Academic Lab: <a href="https://dsp.ut.ac.ir/en/?page_id=88">Data and Signal Processing Lab</a></li>
+			</ul>
+		</di>
+	</div>
+
+<h2>Summary</h2>
 <p>I have studied Computational Linguistics at the University of Tehran, where I was supervised by Dr. Hadi Veisi.</p>
 
-<h2>Education</h2>
-<h3>M.Sc. in Computational Linguistics, <small>University of Tehran, Iran, 2019.</small></h3> 
-<p><b>Thesis:</b> Design and Implementation of a Spell-checker for Kurdish Language</p>
+<h2 id="education">Education</h2>
+<h3>M.Sc. in Computational Linguistics <small>University of Tehran, Iran, 2016-2019.</small></h3> 
+<p><b>Thesis:</b> Design and Implementation of a Spell-checker for Kurdish Language (Advisor: Dr. Hadi Veisi)</p>
+<p><b>Courses:</b> Computational Linguistics, Corpus Design and Management, Machine Learning, Formal Syntax, 
+	General and Experimental Phonetics, Morphology, Natural Language Processing, Ontology, Phonology, Semantics, 
+	Statistical methods in NLP</p>
+<h3>B.Sc. Geomatics Engineering <small>Khaje Nasir Toosi University of Technology, Tehran, Iran. 2006-2010</small></h3>
+<p><b>GIS Research Project:</b> Site Selection for Urban Rescue Stations with Fuzzy Methods.</p>
+<p><b>Courses:</b> GIS, Remote Sensing, Photogrammetry, Geodesy, Surveying, Project Planning.</p>
 
 <h2>Research interests</h2>
 <ul>
 	<li>Natural Language Processing (NLP)</li>
 	<li>Computational Linguistics</li>
 	<li>Spell-checker</li>
-	<li>Weighted Finite-State Transducers in Computational Lingustics</li>
+	<li>Weighted Finite-State Transducers</li>
 	<li>Corpus Linguistics</li>
 	<li>Kurdish Language</li>
 	<li>Phonology</li>
 	<li>Morphology</li>
 </ul>
 
-<h2>Teaching Assistance Experience</h2>
-University of Tehran:
+<h2 id="projects">NLP Projects</h2>
 <ul>
-	<li><a href="http://dsp.ut.ac.ir/en/?page_id=2650">Intro to Computational Linguistics</a>, Spring 2018</li>
-	<li><a href="http://dsp.ut.ac.ir/en/?page_id=2834">Intro to Computational Linguistics for General Linguistics students</a>, Fall 2018</li>
-	<li><a href="http://dsp.ut.ac.ir/en/?page_id=3121">Intro to Computational Linguistics</a>, Spring 2019</li>
+	<li><b><a href="https://books.vejin.net/en/">Vejin Books</a></b>, The online Kurdish literary text corpus <a href="https://books.vejin.net/en/contributor/2">(administrator, developer and editor)</a></li>
+	<li><b><a href="https://lex.vejin.net/en/">Vejin Lex</a></b>, The online Kurdish Dictionaries collection <a href="https://lex.vejin.net/en/contributor/1">(administrator, developer)</a></li>
+	<li><b><a href="http://www.kurdinus.com">Kurdinus.com</a></b>, JavaScript tools for normalization and transliteration of Kurdish texts <a href="https://github.com/aso-mehmudi/kurdinus">(developer)</a></li>
+	<li><b><a href="http://spell.kurdinus.com/">Central Kurdish Spell-checker</a></b>, designed and implementated based on my master's thesis</li>
+	<li><b><a href="http://asosoft.kurdinus.com/G2PConvertor">Kurdish Grapheme-to-Phoneme convertor</a></b></li>
+	<li><b><a href="http://asosoft.kurdinus.com/PoemClassifier">Kurdish Poem Meter Classifier</a></b></li>
+	<li><b><a href="https://github.com/aso-mehmudi/FastCorpusSearch">Fast Corpus Search</a></b>, A fast, small, and portable Windows application for search in large text corpora, with regex and right-to-left support.</li>
+
 </ul>
-<h2>NLP Projects</h2>
+<h2 id="publication">Publication</h2>
+<h3>Journal Papers</h3>
 <ul>
-	<li><b><a href="http://www.vejinbooks.com">VejinBooks.com</a></b>, The online Kurdish literary text corpus (administrator, developer and editor)</li>
-	<li><b><a href="http://www.kurdinus.com">Kurdinus.com</a></b>, JavaScript tools for normalization and transliteration of Kurdish texts (developer)</li>
+	<li><b>Mahmudi, A.</b>, Veisi, H., (2020) “<i>Automated Grapheme-to-Phoneme Conversion for Central Kurdish based on Optimality Theory</i>” (Under Review in Computer Speech and Language Journal)</li>
+	<li><b>Mahmudi, A.</b>, Veisi, H., (2020) “<i>Automated Kurdish Poem Meter Identification</i>” (Under Review)</li>
+	<li>Naserzade, M., <b>Mahmudi, A.</b>, Veisi, H., (2020) “<i>Computational Morphology of Standard Central Kurdish</i>”. (in preparation)</li>
+	<li><b>Mahmudi, A.</b>, Veisi, H., (2020) “<i>Implementation of a Kurdish Spell-Checker Using Finite-State Transducers</i>”. (in preparation)</li>
+	<li>Veisi, H., MohammadAmini, M., <b>Mahmudi, A.</b>, (2020) “<i>Jira: a Kurdish Speech Recognition System, Designing and Building Speech Corpus and Pronunciation Lexicon</i>” (Under Review)</li>
 </ul>
+<h3>Conference Papers</h3>
+<ul>
+	<li><b>Mahmudi, A.</b>, Veisi, H., MohammadAmini, M., Hosseini, H.  (2019) “<i><a href="https://www.researchgate.net/publication/333729065">Automated Kurdish Text Normalization</a></i>”. Second International Conference of Kurdish Language and Literature, Sanandaj, Iran.</li>
+	<li>MohammadAmini, M., Veisi, H., <b>Mahmudi, A.</b>, Hosseini, H. (2019) “<i><a href="https://www.researchgate.net/publication/333827836">Challenges in Standardization of Kurdish Language: A Corpus based approach</a></i>”. Second International Conference of Kurdish Language and Literature, Sanandaj, Iran.</li>
+</ul>
+
+<h2 id="experiences">Teaching Assistance Experiences</h2>
+<p>University of Tehran:</p>
+<ul>
+	<li>Spring 2019: <a href="http://dsp.ut.ac.ir/en/?page_id=3121">Intro to Computational Linguistics</a></li>
+	<li>Fall 2018: <a href="http://dsp.ut.ac.ir/en/?page_id=2834">Intro to Computational Linguistics for General Linguistics students</a></li>
+	<li>Spring 2018: <a href="http://dsp.ut.ac.ir/en/?page_id=2650">Intro to Computational Linguistics</a></li>
+</ul>
+
+<h2>Research Experiences</h2>
+<ul>
+	<li>Kurdish Text Processing, <a href="http://asosoft.com/en/">AsoSoft Research Group</a></li>
+	<li>Natural Language Processing, <a href="http://dsp.ut.ac.ir/en/">Data and Signal Processing Lab</a></li>
+</ul>
+
+<h2 id="skills">Skills</h2>
+<h3>Software Development</h3>
+<p>C#, Python, SQL, Web-Crawling, Text Processing, OpenType Font Development</p>
+<h3>Web Development</h3>
+<p>JavaScript, ASP.NET MVC, PHP, HTML, XML, JSON</p>
+<h3>Surveying Engineering</h3>
+<p>Civil 3D, AutoCAD, ArcGIS</p>
+<h3>Office</h3>
+<p>Microsoft Word, Excel, PowerPoint, Photoshop</p>
+<h3>Language Skills</h3>
+<p>English (fluent), Kurdish (native, professional), Persian (fluent), Classical Arabic (fair)</p>
+
 <h2>Volunteer Experience</h2>
 <ul>
 	<li>Founder and first administrator of Central Kurdish Wikipedia (<a href="https://ckb.wikipedia.org/wiki/user:ئاسۆ">ckb.wikipedia.org/wiki/user:ئاسۆ</a>)</li>
 	<li>Digitizer of historical and rare books (<a href="https://archive.org/details/@aso_mahmudi">archive.org/details/@aso_mahmudi</a>)</li>
 	<li>Map Maker in OpenStreetMap project (<a href="https://www.openstreetmap.org/user/ئاسۆ">openstreetmap.org/user/ئاسۆ</a>)</li>
 </ul>
+
+<h2>Places I have lived or worked in</h2>
+<div class="" style="min-width:300px;">
+	<div id="mapid" style="height: 250px; z-index: 2;"></div>
+</div>
+<script>
+	var map = L.map('mapid', {minZoom: 3, maxZoom: 9});
+    map.setView([34, 45], 4);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    L.marker([35.52, 46.17]).addTo(map).bindPopup('Mariwan');
+    L.marker([35.70, 51.39]).addTo(map).bindPopup('Tehran: 2006-2010, 2016-2019');
+    L.marker([36.14, 45.54]).addTo(map).bindPopup('Sardasht: 2012-2013');
+    L.marker([32.25, 48.82]).addTo(map).bindPopup('Gotvand: 2011');
+    L.marker([34.63, 45.32]).addTo(map).bindPopup('Kalar: 2013-2014, 2015');
+    L.marker([34.46, 45.86]).addTo(map).bindPopup('Sarpole Zahab: 2012');
+    L.marker([34.36, 47.12]).addTo(map).bindPopup('Kermanshah: 2016');
+    L.marker([35.287, 46.43]).addTo(map).bindPopup('Sawlawa');
+</script>
+
+<div class="footer">
+	<p>2020 <a href="https://github.com/aso-mehmudi/aso-mehmudi.github.io">Aso Mahmudi</a></p>
+</div>
 </body>
 </html>

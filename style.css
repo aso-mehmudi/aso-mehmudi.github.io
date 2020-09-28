@@ -1,10 +1,16 @@
+html {
+	scroll-behavior: smooth;
+  }
 body {
 	font-size: 14px;
-	padding: 20px;
+	padding: 50px;
 	font-family: Segoe UI, Tahoma;
+	max-width: 800px;
+	margin: auto;
 }
 a {
 	text-decoration: none;
+	color: #4183C4;
 }
 a:hover {
 	color: black;
@@ -12,21 +18,54 @@ a:hover {
 h1 {
 	font-size: 35px;
 	margin: 0;
+	text-align: center;
 }
 h2 {
 	font-size: 20px;
-	margin: 10px 0 0 0;
-	color: #34485E;
+	padding: 50px 0 5px 0;
+	color: #4183C4;
+	border-bottom: 1px solid #eee;
 }
 h3 {
-	font-size: 14px;
-	margin: 3px 0 0 0;
+	font-size: 16px;
+	margin: 10px 0 0 5px;
+}
+h3 small{
+	font-weight: 400;
 }
 p{
-	margin: 0;
+	margin: 0 10px;
 }
 ul{
-	margin: 0;
+	margin: 0 15px;
+}
+.fixedmenu{
+	top: 0;
+    right: 0;
+    left: auto;
+	bottom: auto;
+	position: fixed;
+    z-index: 101;
+    margin: auto;
+	width: 100%;
+	background-color: #444;
+	text-align: center;
+	padding:10px;
+}
+.fixedmenu .item{
+	display: inline;
+	padding:20px;
+}
+.fixedmenu a {
+	color: #eee;
+}
+.ulcenter{
+	text-align: center;
+	list-style-type: none;
+	padding: 0;
+}
+.dimmed{
+	color: #aaa;
 }
 .title {
 	margin: 10px 0;
@@ -34,6 +73,12 @@ ul{
 	width: 100%;
 	display: inline-block;
 	max-width:700px;
+}
+.container{
+	margin: 20px 0;
+	display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 .nav{
 	width: 100%;
@@ -64,12 +109,9 @@ ul{
 .section2 p{
 	font-size: 12px;
 }
-#footer {
+.footer {
+	margin-top: 40px;
 	text-align: center;
-	display: block;
-	direction: ltr;
-	width: 100%;
-	padding: 10px 0;
 	color: #9aa;
 }
 @media only screen and (max-width:500px) {
