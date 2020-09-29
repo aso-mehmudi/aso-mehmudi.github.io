@@ -3,7 +3,7 @@ html {
   }
 body {
 	font-size: 14px;
-	padding: 45px;
+	padding: 45px 10px;
 	font-family: Segoe UI, Tahoma;
 	max-width: 800px;
 	margin: auto;
@@ -37,16 +37,16 @@ p{
 	margin: 0 10px;
 }
 ul{
-	margin: 0 15px;
+	margin: 0 5px;
 }
 .fixedmenu{
 	top: 0;
-    right: 0;
-    left: auto;
+	right: 0;
+	left: auto;
 	bottom: auto;
 	position: fixed;
-    z-index: 101;
-    margin: auto;
+	z-index: 101;
+	margin: auto;
 	width: 100%;
 	background-color: #444;
 	text-align: center;
@@ -54,10 +54,17 @@ ul{
 }
 .fixedmenu .item{
 	display: inline;
-	padding:20px;
+	padding: 0 12px;
 }
 .fixedmenu a {
 	color: #eee;
+}
+.fixedmenu .activeitem{
+	display: inline;
+	padding:20px;
+}
+.activeitem a{
+	font-weight:bold;
 }
 .ulcenter{
 	text-align: center;
@@ -67,60 +74,24 @@ ul{
 .dimmed{
 	color: #aaa;
 }
-.title {
-	margin: 10px 0;
-	padding-top: 10px;
-	width: 100%;
-	display: inline-block;
-	max-width:700px;
-}
 .container{
 	margin: 20px 0;
 	display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-}
-.nav{
-	width: 100%;
-	display: inline-block;
-	max-width:700px;
-}
-.specs{
-	max-width: 500px;
-    margin: 30px auto;
-	background-color: #eee;
-	padding: 10px;
-	border-radius: 24px;
-}
-.section{
-	margin: 10px;
-	padding: 10px;
-	background-color: #f7f8fa;
-	border-radius: 10px;
-	border: 1px solid #e3e3e3;
-}
-.section:hover{
-	border-color: #4184f3;
-}
-.section2{
-	padding: 5px;
-	color: #444;
-}
-.section2 p{
-	font-size: 12px;
+	justify-content: center;
+	flex-flow: row wrap;
 }
 .footer {
 	margin-top: 40px;
 	text-align: center;
 	color: #9aa;
 }
-@media only screen and (max-width:500px) {
-	#Keyboard, #KeyboardShifted, #KeyboardLayoutType {
+@media only screen and (max-width:600px) {
+	.fixedmenu .item {
 		display: none;
 	}
 }
-@media only screen and (min-width:500px) {
-	#KeyboardMobile {
-		display: none;
+@media only screen and (min-width:600px) {
+	.fixedmenu .item {
+		display: inline;
 	}
 }
